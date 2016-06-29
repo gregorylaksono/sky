@@ -29,21 +29,21 @@ public class Main extends VerticalLayout {
 		VerticalLayout header = new VerticalLayout();
 		header.addStyleName(StyleUtil.MAIN_HEADER);
 		header.setWidth(100, Unit.PERCENTAGE);
-		header.setHeight(180, Unit.PIXELS);
+		header.setHeight(130, Unit.PIXELS);
 		
 		VerticalLayout content = new VerticalLayout();
 		content.addStyleName(StyleUtil.COLOR_TRANSPARENT);
 		content.addStyleName(StyleUtil.CONTENT_ROOT);
 		
-		content.setHeight(100, Unit.PERCENTAGE);
-		content.setWidth(85, Unit.PERCENTAGE);
+		content.setHeight(90, Unit.PERCENTAGE);
+		content.setWidth(90, Unit.PERCENTAGE);
 		
 		addComponent(header);
 		addComponent(content);
 		
 		setExpandRatio(header, 0.0f);
 		setExpandRatio(content, 1.0f);
-		setComponentAlignment(content, Alignment.TOP_CENTER);
+		setComponentAlignment(content, Alignment.MIDDLE_CENTER);
 		
 	}
 	
